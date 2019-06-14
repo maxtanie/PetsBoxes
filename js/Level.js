@@ -81,7 +81,7 @@ export default class Level {
     for (let i = 0; i < shuffle.length; i++) {
       const attr = extractTarget(shuffle[i]);
       output += `<img id="box-${i +
-        1}" class="box" data-box-content="${attr}" src="./img/box-closed.png" />`;
+        1}" class="box" data-box-content="${attr}" src="./../img/box-closed.png" />`;
     }
     return output;
   }
