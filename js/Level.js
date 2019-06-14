@@ -11,12 +11,12 @@ export default class Level {
     this.found = 0;
     this.errMsg = "err-msg";
     this.heartLife = "./img/heart-life.png";
-    this.boxClosed = "./../img/box-closed.png";
-    this.boxEmpty = "./../img/box-open.png";
-    this.boxCat = "./../img/box-cat.png";
-    this.boxDog = "./../img/box-dog.png";
-    this.boxLion = "./../img/box-lion.png";
-    this.boxButterfly = "./../img/box-butterfly.png";
+    this.boxClosed = "./img/box-closed.png";
+    this.boxEmpty = "./img/box-open.png";
+    this.boxCat = "./img/box-cat.png";
+    this.boxDog = "./img/box-dog.png";
+    this.boxLion = "./img/box-lion.png";
+    this.boxButterfly = "./img/box-butterfly.png";
     this.petsTab = [
       this.boxCat,
       this.boxDog,
@@ -81,7 +81,7 @@ export default class Level {
     for (let i = 0; i < shuffle.length; i++) {
       const attr = extractTarget(shuffle[i]);
       output += `<img id="box-${i +
-        1}" class="box" data-box-content="${attr}" src="./../img/box-closed.png" />`;
+        1}" class="box" data-box-content="${attr}" src="./img/box-closed.png" />`;
     }
     return output;
   }
