@@ -49,7 +49,7 @@ function gameOver() {
 function openBox(evt) {
   const img = evt.target || evt.srcElement;
   const target = img.getAttribute("data-box-content");
-  img.src = `/img/box-${target}.png`;
+  img.src = `./img/box-${target}.png`;
 
   if (target === chosenAnimal && target !== null) {
     currentLevel.found++;
