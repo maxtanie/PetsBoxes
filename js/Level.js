@@ -10,13 +10,13 @@ export default class Level {
     this.toFind = this.baseToFind + level * 1;
     this.found = 0;
     this.errMsg = "err-msg";
-    this.heartLife = "./img/heart-life.png";
-    this.boxClosed = "./img/box-closed.png";
-    this.boxEmpty = "./img/box-open.png";
-    this.boxCat = "./img/box-cat.png";
-    this.boxDog = "./img/box-dog.png";
-    this.boxLion = "./img/box-lion.png";
-    this.boxButterfly = "./img/box-butterfly.png";
+    this.heartLife = "./../img/heart-life.png";
+    this.boxClosed = "./../img/box-closed.png";
+    this.boxEmpty = "./../img/box-open.png";
+    this.boxCat = "./../img/box-cat.png";
+    this.boxDog = "./../img/box-dog.png";
+    this.boxLion = "./../img/box-lion.png";
+    this.boxButterfly = "./../img/box-butterfly.png";
     this.petsTab = [
       this.boxCat,
       this.boxDog,
