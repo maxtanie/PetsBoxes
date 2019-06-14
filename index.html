@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Petsboxes</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/game.js" type="module"></script>
+  </head>
+  <body>
+    <div class="loader"></div>
+
+    <header class="title-header oswald-font">
+      <h1 class="color-purple">
+        <span class="color-header-title">Pe</span>ts<span
+          class="color-header-title"
+          >bo</span
+        >xes<span class="color-header-title"></span>
+      </h1>
+    </header>
+    <!-- End header -->
+
+    <button id="start_game" class="start-game-btn">
+      start game
+      <div class="game-active"></div>
+    </button>
+
+    <div id="game-over" class="game-over is-hidden">
+      <span class="blink">Game over !</span>
+      <!-- <button id="btn_restart" class="btn-restart">Restart</button> -->
+    </div>
+
+    <div id="game_board" class="is-hidden">
+      <section class="random-section-img">
+        <div class="flex">
+          <article class="bloc-img">
+            <img src="img/dog.png" alt="Dog" />
+          </article>
+          <article class="bloc-img">
+            <img src="img/lion.png" alt="Lion" />
+          </article>
+          <article class="bloc-img">
+            <img class="butterfly" src="img/butterfly.png" alt="Butterfly" />
+          </article>
+          <article class="bloc-img">
+            <img src="img/cat.png" alt="Cat" />
+          </article>
+        </div>
+      </section>
+      <!-- End section random-section-img -->
+      <div class="circle-center"></div>
+
+      <!-- <section id="random-img-select" class="random-img-select"></section> -->
+      <section id="numberToFind" class="number-to-find"></section>
+
+      <!-- End section random-img-select -->
+
+      <section id="err-msg" class="err-msg"></section>
+
+      <section class="bar-fixed flex-around">
+        <nav class="nav-levels">
+          <ul>
+            <li id="level-1" class="level">Level 01</li>
+            <li id="level-2" class="level">Level 02</li>
+            <li id="level-3" class="level">Level 03</li>
+            <li id="level-4" class="level">Level 04</li>
+            <li id="level-5" class="level">Level 05</li>
+          </ul>
+        </nav>
+        <!-- End nav -->
+
+        <section id="player-lifes" class="player-lifes grid">
+          Lifes
+          <span class="circle-life"></span>
+          <span class="circle-life"></span>
+          <span class="circle-life"></span>
+        </section>
+        <!-- End player-lifes -->
+      </section>
+
+      <main class="fixed">
+        <div class="container">
+          <div class="flex-2">
+            <section class="section-boxes" id="section-boxes">
+              <!-- <div class="box">
+                <img id="box-1" src="img/box-closed.png" alt="Box-closed-1" />
+              </div>
+              <div class="box">
+                <img id="box-2" src="img/box-closed.png" alt="Box-closed-2" />
+              </div>
+              <div class="box">
+                <img id="box-3" src="img/box-closed.png" alt="Box-closed-3" />
+              </div>
+              <div class="box">
+                <img id="box-4" src="img/box-closed.png" alt="Box-closed-4" />
+              </div> -->
+            </section>
+            <!-- End section-boxes -->
+
+            <!--<section id="help-button" class="help-button"></section> -->
+          </div>
+        </div>
+        <!-- End container -->
+      </main>
+    </div>
+    <!-- End main -->
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+  </body>
+</html>
