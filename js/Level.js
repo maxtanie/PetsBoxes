@@ -10,7 +10,7 @@ export default class Level {
     this.toFind = this.baseToFind + level * 1;
     this.found = 0;
     this.errMsg = "err-msg";
-    this.heartLife = "img/heart-life.png";
+    this.heartLife = "./../img/heart-life.png";
     this.boxClosed = "./../img/box-closed.png";
     this.boxEmpty = "./../img/box-open.png";
     this.boxCat = "./../img/box-cat.png";
@@ -77,19 +77,13 @@ export default class Level {
     // console.log("----------------------------");
     // console.log("levelImages", levelImages);
     // console.log("shuffeld", shuffle);
-    const parent = document.getElementById("section-boxes");
+
     for (let i = 0; i < shuffle.length; i++) {
       const attr = extractTarget(shuffle[i]);
-      const img = document.createElement("img");
-      img.setAttribute("data-box-content", attr);
-      img.id = "box-" + i;
-      img.className = "box";
-      img.src = "./../img/box-closed.png";
-      parent.appendChild(img);
-      // output += `<img id="box-${i +
-      //   1}" class="box" data-box-content="${attr}" src="./img/box-closed.png" />`;
+      output += `<img id="box-${i +
+        1}" class="box" data-box-content="${attr}" src="./../img/box-closed.png" />`;
     }
-    // return output;
+    return output;
   }
 
   loseLife() {
@@ -106,7 +100,7 @@ export default class Level {
     let output = "";
     for (var i = 0; i < this.lives; i++) {
       output += `
-        <img src="./${this.heartLife}" class="circle-life" />
+        <img src="${this.heartLife}" class="circle-life" />
       `;
     }
     return output;
