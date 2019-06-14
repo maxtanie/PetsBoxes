@@ -10,7 +10,7 @@ export default class Level {
     this.toFind = this.baseToFind + level * 1;
     this.found = 0;
     this.errMsg = "err-msg";
-    this.heartLife = "./../img/heart-life.png";
+    this.heartLife = "img/heart-life.png";
     this.boxClosed = "./../img/box-closed.png";
     this.boxEmpty = "./../img/box-open.png";
     this.boxCat = "./../img/box-cat.png";
@@ -100,7 +100,7 @@ export default class Level {
     let output = "";
     for (var i = 0; i < this.lives; i++) {
       output += `
-        <img src="${this.heartLife}" class="circle-life" />
+        <img src="./${this.heartLife}" class="circle-life" />
       `;
     }
     return output;
