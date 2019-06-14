@@ -89,7 +89,7 @@ function setNextLevel(animal, isRestart) {
     activeLevelItem.classList.remove("is-active");
     nextActiveLevel.classList.add("is-active");
   }
-  sectionBoxes.innerHTML = currentLevel.drawBoxes();
+  currentLevel.drawBoxes();
   //console.log("Current-level", currentLevel.levelName);
   const boxes = document.querySelectorAll(".box");
   listenBoxClicks(boxes);
