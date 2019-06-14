@@ -10,7 +10,7 @@ export default class Level {
     this.toFind = this.baseToFind + level * 1;
     this.found = 0;
     this.errMsg = "err-msg";
-    this.heartLife = "./../img/heart-life.png";
+    this.heartLife = "./img/heart-life.png";
     this.boxClosed = "./../img/box-closed.png";
     this.boxEmpty = "./../img/box-open.png";
     this.boxCat = "./../img/box-cat.png";
@@ -74,7 +74,7 @@ export default class Level {
       return match[match.length - 2];
     }
 
-    // console.log("----------------------------");
+    // console.log("----------------------------"
     // console.log("levelImages", levelImages);
     // console.log("shuffeld", shuffle);
 
